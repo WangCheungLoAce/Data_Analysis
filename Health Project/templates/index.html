@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Data Scraper</title>
+</head>
+<body>
+    <h1>Health Data Scraper</h1>
+    <form id="scrapeForm" action="/run_py_script" method="post">
+        <label for="specialty">Specialty:</label>
+        <input type="text" id="specialty" name="specialty"><br><br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br><br>
+        <button type="submit">Run</button>
+        <br></br>
+    </form>
+    <div id="output">{{ output }}</div>
+
+
+    
+</body>
+</html>
